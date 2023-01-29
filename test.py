@@ -101,7 +101,7 @@ class life:
                 if neighbours >= 2 and neighbours <= 3:
                     if self.board.is_alive(r,c):
                         newboard.birth_cell(r,c)
-                if neighbours == 3 and not self.board.is_alive(r,c):
+                if neighbours == 3:
                     newboard.birth_cell(r,c)
         self.board = newboard
         newboard.quick_print()
