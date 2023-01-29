@@ -1,0 +1,1 @@
+from life.console import console
