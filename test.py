@@ -29,7 +29,7 @@ class board:
     def randomize(self):
         for r in self.cells:
             for c in r:
-                if random.randint(0,10) == 1:
+                if random.randint(0,7) == 1:
                    c.birth()
                 else:
                     c.kill()
@@ -110,4 +110,4 @@ l = life()
 while True:
     os.system("clear")
     l.iterate()
-    time.sleep(1)
+    time.sleep(.1)
